@@ -47,7 +47,7 @@ Note: This project is pure frontend. No backend or payment integration is coded.
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Click the url port (ex:https://localhost:3000) shown in the terminal to view the project in the browser.
 
 ## Available Scripts
 

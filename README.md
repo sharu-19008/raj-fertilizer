@@ -1,6 +1,6 @@
 # Raj Fertilizer – E‑commerce SPA (Frontend Only)
 
-A responsive React‑based online store for fertilizers, featuring product listing, shopping cart, checkout flow, and animated interactions.
+A responsive React‑based online store for a fertilizer shop, featuring product listing, shopping cart, checkout flow, and animated interactions.
 
 ## Features
 
@@ -11,6 +11,7 @@ A responsive React‑based online store for fertilizers, featuring product listi
 - Session storage persistence for cart & checkout data  
 - React Router for navigation (product details, cart, checkout)  
 - Confetti effect on order confirmation
+
 Note: This project is pure frontend. No backend or payment integration is done. 
 
 ## Tech Stack

@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme {
+    --font-inter: Inter, sans-serif; 
+    --color-btn: #f0872b;
+}
+
+html, body {
+  overflow-x: hidden;
+  
+}
+
+.product-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4em;
+    max-height: 4.2em; /* 3 lines × 1.4em */
+}

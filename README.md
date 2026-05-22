@@ -1,16 +1,72 @@
-# React + Vite
+# Raj Fertilizer – E‑commerce SPA (Frontend Only)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React‑based online store for fertilizers, featuring product listing, shopping cart, checkout flow, and animated interactions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Product catalog with filtering/grid layout  
+- Cart management (add/remove items, quantity updates)  
+- Multi‑step checkout with customer details & billing address    
+- Smooth animations using Framer Motion  
+- Session storage persistence for cart & checkout data  
+- React Router for navigation (product details, cart, checkout)  
+- Confetti effect on order confirmation
+Note: This project is pure frontend. No backend or payment integration is done. 
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (CRA or Vite)  
+- **React Router DOM** – routing  
+- **Context API** – state management (cart, checkout)  
+- **Framer Motion** – animations  
+- **Tailwind CSS** – styling  
+- **React Confetti** – celebratory effect  
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v16 or later)
+- npm or yarn
+
+### Installation
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/your-username/fertilizer-shop.git
+   cd fertilizer-shop
+   ```
+
+2. Install dependencies  
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
+
+3. Start the development server  
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Available Scripts
+
+- `npm start` – runs dev server  
+- `npm run build` – creates production build  
+- `npm test` – launches test runner  
+
+## Deployment
+
+Build the project with `npm run build` and deploy the `dist/` folder to any static host (Vercel, Netlify, GitHub Pages, etc.).
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to check the [issues page](https://github.com/your-username/fertilizer-shop/issues).
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.

@@ -1,6 +1,6 @@
 # Raj Fertilizer – E‑commerce SPA (Frontend Only)
 
-A responsive React‑based online store for a fertilizer shop, featuring product listing, shopping cart, checkout flow, and animated interactions.
+A responsive React‑based online store for Raj Rertilizer shop, featuring product listing, shopping cart, checkout flow, and animated interactions.
 
 ## Features
 

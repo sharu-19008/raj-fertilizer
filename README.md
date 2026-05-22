@@ -40,15 +40,11 @@ Note: This project is pure frontend. No backend or payment integration is coded.
 2. Install dependencies  
    ```bash
    npm install
-   # or
-   yarn
    ```
 
 3. Start the development server  
    ```bash
-   npm start
-   # or
-   yarn start
+   npm run dev
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

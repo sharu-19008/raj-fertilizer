@@ -51,7 +51,7 @@ Note: This project is pure frontend. No backend or payment integration is coded.
 
 ## Available Scripts
 
-- `npm start` – runs dev server  
+- `npm run dev` – runs dev server  
 - `npm run build` – creates production build  
 - `npm test` – launches test runner  
 

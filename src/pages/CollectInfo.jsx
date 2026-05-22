@@ -7,12 +7,12 @@ export default function CollectInfo() {
     const {getCustomerInfo, checkoutItems} = useContext(CheckoutContext)
 
     const [errors, setErrors] = useState({})
+    const navigate = useNavigate()
     
     if(checkoutItems.length === 0) {
         return <Navigate to="/shop/fertilizers" replace />
     }
 
-    const navigate = useNavigate()
 
     function gatherCustomerInfoFunction(event) {
         event.preventDefault();

@@ -7,10 +7,7 @@ export default function Shop() {
 
     // console.log("PRODUCTS ++++ = ",products)
 
-    const activeStyle = {
-        backgroundColor: "darkgreen",
-        color: "white"
-    }
+  
 
     return (
         <>

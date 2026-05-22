@@ -10,9 +10,7 @@ export default function ItemPurchased() {
     const orderPlaced = sessionStorage.getItem('orderJustCompleted')
 
 
-    if(!orderPlaced) {
-        return <Navigate to="/shop/fertilizers" replace />
-    }
+   
 
     useEffect(()=>{
         return ()=>sessionStorage.removeItem('orderJustCompleted')
@@ -20,20 +18,29 @@ export default function ItemPurchased() {
 
 
     useEffect(()=>{
-        confetti({
-            particleCount:120,
-            spread:80,
-            startVelocity:35,
-            origin:{x:0,y:0.5},
-        })
+         if(orderPlaced) {
+            confetti({
+                particleCount:120,
+                spread:80,
+                startVelocity:35,
+                origin:{x:0,y:0.5},
+            })
+    
+            confetti({
+                particleCount:120,
+                spread:80,
+                startVelocity:35,
+                origin:{x:1,y:0.5},
+            })
+        }
 
-        confetti({
-            particleCount:120,
-            spread:80,
-            startVelocity:35,
-            origin:{x:1,y:0.5},
-        })
-    },[])
+        return ()=>sessionStorage.removeItem('orderJustCompleted')
+    },[]
+)
+
+    if(!orderPlaced) {
+        return <Navigate to="/shop/fertilizers" replace />
+    }
 
 
 

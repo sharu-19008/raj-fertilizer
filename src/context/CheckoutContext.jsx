@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 export const CheckoutContext = createContext(null);
 
@@ -41,7 +41,7 @@ export function CheckoutProvider({children}) {
                 return parsed === null ? [] : parsed;
             }
             catch(error) {
-                console.log("Couldn't fetch customer details!")
+                console.log("Couldn't fetch customer details!", error)
                 return [];
             }
         }
@@ -66,17 +66,17 @@ export function CheckoutProvider({children}) {
         navigate('/details')
     }
 
-    function loadCheckoutItems() {
-         if(checkoutItems.length > 0)  return checkoutItems;
-         else {
-            const itemsSaved = sessionStorage.getItem('checkoutItems')
-            if(itemsSaved){
-                const itemsForCheckout = JSON.parse(itemsSaved)
-                return itemsForCheckout || [];
-            }
-            return [];
-         }
+    const loadCheckoutItems = useCallback(() => {
+    if(checkoutItems.length > 0) return checkoutItems;
+    else {
+        const itemsSaved = sessionStorage.getItem('checkoutItems');
+        if(itemsSaved){
+            const itemsForCheckout = JSON.parse(itemsSaved);
+            return itemsForCheckout || [];
+        }
+        return [];
     }
+}, [checkoutItems]); 
 
     function clearCheckoutItems() {
         setCheckoutItems([])

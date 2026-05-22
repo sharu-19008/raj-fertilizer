@@ -17,7 +17,7 @@ export default function CartDetails () {
         return sum + ( item.price*item.quantity )
     },0)
 
-    const itemsList = cartItems.map((item,index)=>{
+    const itemsList = cartItems.map((item)=>{
         return (
             <div key={item.id} className=" flex flex-col p-3 border rounded-2xl gap-3">
                 <div className="flex flex-row gap-5 flex-1">

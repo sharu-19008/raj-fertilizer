@@ -9,11 +9,9 @@ export default function CheckoutPage() {
     
     const {checkoutItems,loadCheckoutItems,clearCheckoutItems,customerInfo, clearCustomerInfo} = useContext(CheckoutContext)
 
-    const {cartItems} = useContext(CartContext)
+    // const {cartItems} = useContext(CartContext)
     
-    if(checkoutItems.length === 0) {
-        return <Navigate to="/shop/fertilizers" replace />
-    }
+    
 
     const navigate = useNavigate()
     
@@ -22,6 +20,10 @@ export default function CheckoutPage() {
     useEffect(()=>{
         loadCheckoutItems()
     },[])
+
+    if(checkoutItems.length === 0) {
+        return <Navigate to="/shop/fertilizers" replace />
+    }
 
     const totalPrice = checkoutItems.length && checkoutItems.reduce((sum,item)=>{
                             if(item.quantity) {

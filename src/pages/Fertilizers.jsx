@@ -1,4 +1,4 @@
-import {useContext,useState} from "react"
+import {useContext} from "react"
 import {Link} from "react-router-dom"
 import {motion} from "framer-motion"
 import {ProductsContext} from "../context/ProductsContext" 
@@ -38,7 +38,7 @@ export default function Fertilizers () {
         sortedFertilizersList = fertilizers
     }
 
-    const fertilizersList = sortedFertilizersList.map((fertilizer, index)=>{
+    const fertilizersList = sortedFertilizersList.map((fertilizer)=>{
         return (
             <motion.div 
                 key={fertilizer.id} 

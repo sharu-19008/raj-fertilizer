@@ -12,7 +12,7 @@ A responsive React‑based online store for Raj Rertilizer shop, featuring produ
 - React Router for navigation (product details, cart, checkout)  
 - Confetti effect on order confirmation
 
-Note: This project is pure frontend. No backend or payment integration is done. 
+Note: This project is pure frontend. No backend or payment integration is coded. 
 
 ## Tech Stack
 
